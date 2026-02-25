@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Генезийский язык — Учебник</title>
+<style>
+body {margin:0; font-family:Arial,sans-serif; background:#f4f6f8; color:#222;}
+header {background:#243447; color:white; padding:25px; text-align:center;}
+nav {background:#34495e; padding:10px; display:flex; flex-wrap:wrap; gap:6px; justify-content:center;}
+nav button {padding:8px 12px; border:none; background:#ecf0f1; cursor:pointer; border-radius:4px; font-weight:bold;}
+nav button:hover {background:#bdc3c7;}
+main {max-width:1100px; margin:auto; padding:20px;}
+.page {display:none; background:white; padding:20px; border-radius:6px; margin-bottom:20px;}
+.rule {background:#fff6dd; border-left:4px solid #f39c12; padding:10px; margin:10px 0;}
+.words {background:#eef3f7; border-left:4px solid #3498db; padding:10px; margin:10px 0;}
+.example {background:#f0f0f0; padding:8px; font-family:monospace; margin:6px 0;}
+.exercise {background:#e8f5e9; border-left:4px solid #2ecc71; padding:10px; margin:10px 0;}
+input {padding:6px; font-size:16px; margin-bottom:10px;}
+footer {text-align:center; color:#666; padding:15px;}
+table {width:100%; border-collapse:collapse; margin-top:10px;}
+th, td {border:1px solid #ccc; padding:6px;}
+th {background:#e6ebef;}
+tr:nth-child(even) {background:#f9f9f9;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Генезийский язык</h1>
+<p>Полный учебник с уроками и словарем</p>
+</header>
+
+<nav>
+<button onclick="showPage(0)">Введение</button>
+<button onclick="showPage(1)">Алфавит</button>
+<button onclick="showPage(2)">Урок 1</button>
+<button onclick="showPage(3)">Урок 2</button>
+<button onclick="showPage(4)">Урок 3</button>
+<button onclick="showPage(5)">Урок 4</button>
+<button onclick="showPage(6)">Урок 5</button>
+<button onclick="showPage(7)">Урок 6</button>
+<button onclick="showPage(20)">Словарь</button>
+</nav>
+
+<main>
+
+<!-- Введение -->
+<div class="page" id="page0">
+<h2>Добро пожаловать</h2>
+<p>Генезийский язык — простой и логичный язык для быстрого общения.</p>
+<div class="rule">
+Как использовать учебник:<br>
+1. Изучи алфавит<br>
+2. Читай новые слова и правила<br>
+3. Делай упражнения<br>
+4. Составляй свои предложения
+</div>
+</div>
+
+<!-- Алфавит -->
+<div class="page" id="page1">
+<h2>Алфавит</h2>
+<p><b>Гласные:</b> a e i o u</p>
+<p><b>Согласные:</b> b d f g h k l m n p r s t w y</p>
+<div class="exercise">Упр.1: прочитай вслух — ba da ma la sa</div>
+<div class="exercise">Упр.2: прочитай — mama papa</div>
+<div class="exercise">Упр.3: прочитай — wota fami</div>
+</div>
+
+<!-- Урок 1 -->
+<div class="page" id="page2">
+<h2>Урок 1: Местоимения</h2>
+<div class="words">
+ai — я<br>yu — ты<br>hi — он<br>shi — она<br>wi — мы<br>dei — они
+</div>
+<div class="rule">Порядок слов: кто + действие</div>
+<div class="example">ai go</div>
+<div class="example">yu bi</div>
+<div class="exercise">Упр.1: составь "я иду"</div>
+<div class="exercise">Упр.2: составь "мы идём"</div>
+<div class="exercise">Упр.3: составь "они идут"</div>
+</div>
+
+<!-- Урок 2 -->
+<div class="page" id="page3">
+<h2>Урок 2: Действия</h2>
+<div class="words">
+go — идти<br>bi — быть<br>it — есть<br>drink — пить<br>do — делать
+</div>
+<div class="example">ai go</div>
+<div class="example">yu it</div>
+<div class="exercise">Упр.1: составь "ты идёшь"</div>
+<div class="exercise">Упр.2: составь "я пью воду"</div>
+<div class="exercise">Упр.3: составь "он делает"</div>
+</div>
+
+<!-- Урок 3 -->
+<div class="page" id="page4">
+<h2>Урок 3: Еда и вода</h2>
+<div class="words">
+fud — еда<br>wota — вода<br>bred — хлеб<br>sup — суп<br>mit — мясо
+</div>
+<div class="example">ai it fud</div>
+<div class="example">yu drink wota</div>
+<div class="exercise">Упр.1: составь "я ем хлеб"</div>
+<div class="exercise">Упр.2: составь "ты пьёшь воду"</div>
+<div class="exercise">Упр.3: составь "они едят суп"</div>
+</div>
+
+<!-- Урок 4 -->
+<div class="page" id="page5">
+<h2>Урок 4: Семья</h2>
+<div class="words">
+mama — мать<br>papa — отец<br>son — сын<br>dota — дочь<br>fami — семья
+</div>
+<div class="example">mama end papa</div>
+<div class="exercise">Упр.1: составь "мама и папа"</div>
+<div class="exercise">Упр.2: составь "сын ест"</div>
+<div class="exercise">Упр.3: составь "дочь пьёт"</div>
+</div>
+
+<!-- Урок 5 -->
+<div class="page" id="page6">
+<h2>Урок 5: Время</h2>
+<div class="words">
+did — прошлое<br>wil — будущее
+</div>
+<div class="example">ai did go</div>
+<div class="example">ai wil go</div>
+<div class="exercise">Упр.1: "я пошёл" (прошлое)</div>
+<div class="exercise">Упр.2: "ты пойдёшь" (будущее)</div>
+<div class="exercise">Упр.3: "мы будем есть"</div>
+</div>
+
+<!-- Словарь -->
+<div class="page" id="page20">
+<h2>Полный словарь (108 слов)</h2>
+<input id="search" placeholder="Введите слово на генезийском..." oninput="searchWord()">
+<div id="result"></div>
+<table>
+<thead><tr><th>Генезийский</th><th>Русский</th></tr></thead>
+<tbody id="dictTable"></tbody>
+</table>
+</div>
+
+</main>
+
+<footer>Генезийский язык · Учебник</footer>
+
+<script>
+// Полный словарь
+const dictionary = [
+["ai","я"],["yu","ты"],["hi","он"],["shi","она"],["wi","мы"],["dei","они"],["it","оно / есть"],
+["did","прошлое"],["wil","будущее"],
+["bi","быть"],["go","идти"],["kam","приходить"],["do","делать"],["hab","иметь"],
+["laik","любить"],["si","видеть"],["gib","давать"],["tak","брать"],["se","говорить"],
+["kan","мочь"],["nid","нуждаться"],["lib","жить"],["wok","работать"],["plei","играть"],
+["drink","пить"],["dink","думать"],["now","знать"],["luk","смотреть"],["hir","слышать"],
+["help","помогать"],["bild","строить"],["brek","ломать"],["open","открывать"],
+["klos","закрывать"],["send","посылать"],["get","получать"],["run","бежать"],
+["sit","сидеть"],["stand","стоять"],["slip","спать"],["kuk","готовить"],
+["lern","учить"],["lid","вести"],
+["mama","мать"],["papa","отец"],["son","сын"],["dota","дочь"],["bro","брат"],["sis","сестра"],
+["fami","семья"],["hus","муж"],["wif","жена"],["babi","младенец"],
+["man","человек"],["wuman","женщина"],["child","ребёнок"],["frend","друг"],
+["wokman","рабочий"],["bildman","строитель"],["kukman","повар"],
+["dok","врач"],["lernman","учитель"],["farman","фермер"],
+["fud","еда"],["wota","вода"],["bred","хлеб"],["rais","рис"],["sup","суп"],
+["mit","мясо"],["fish","рыба"],["eg","яйцо"],["milk","молоко"],["frut","фрукт"],
+["haus","дом"],["sitc","город"],["ples","место"],["taim","время"],["dei","день"],
+["nait","ночь"],["wod","слово"],["ting","вещь"],["wai","путь"],["bodi","тело"],
+["hand","рука"],["hed","голова"],["ai2","глаз"],["leg","нога"],
+["big","большой"],["smol","маленький"],["gud","хороший"],["bad","плохой"],
+["niu","новый"],["old","старый"],["fast","быстро"],["slo","медленно"],
+["dis","этот"],["dat","тот"],
+["in","в"],["on","на"],["wit","с"],["fo","для"],["end","и"],["ma","вопрос"],
+["yes","да"],["no","нет"],["plis","пожалуйста"],["tank","спасибо"]
+];
+
+// Таблица
+const table=document.getElementById("dictTable");
+dictionary.forEach(w=>{
+ let row=document.createElement("tr");
+ row.innerHTML=`<td>${w[0]}</td><td>${w[1]}</td>`;
+ table.appendChild(row);
+});
+
+// Поиск
+function searchWord(){
+ let w=document.getElementById("search").value.trim().toLowerCase();
+ let found=dictionary.find(x=>x[0]===w);
+ document.getElementById("result").innerText=found?`Перевод: ${found[1]}`:"";
+}
+
+// Переключение страниц
+function showPage(n){
+ document.querySelectorAll(".page").forEach(p=>p.style.display="none");
+ document.getElementById("page"+n).style.display="block";
+}
+showPage(0);
+</script>
+
+</body>
+</html>
